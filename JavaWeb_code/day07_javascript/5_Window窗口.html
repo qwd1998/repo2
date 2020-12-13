@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window窗口</title>
+</head>
+        <!--Window：窗口对象
+        1. 创建
+        2. 方法
+        1. 与弹出框有关的方法：
+                alert()	显示带有一段消息和一个确认按钮的警告框。
+                confirm()	显示带有一段消息以及确认按钮和取消按钮的对话框。
+                * 如果用户点击确定按钮，则方法返回true
+                * 如果用户点击取消按钮，则方法返回false
+                prompt()	显示可提示用户输入的对话框。
+                * 返回值：获取用户输入的值
+        2. 与打开关闭有关的方法：
+                close()	关闭浏览器窗口。
+                * 谁调用我 ，我关谁
+                open()	打开一个新的浏览器窗口
+                * 返回新的Window对象
+        3. 与定时器有关的方式
+                setTimeout()	在指定的毫秒数后调用函数或计算表达式。
+                 * 参数：
+                1. js代码或者方法对象
+                2. 毫秒值
+                * 返回值：唯一标识，用于取消定时器
+                clearTimeout()	取消由 setTimeout() 方法设置的 timeout。
+
+                setInterval()	按照指定的周期（以毫秒计）来调用函数或计算表达式。
+                clearInterval()	取消由 setInterval() 设置的 timeout。
+
+        3. 属性：
+                1. 获取其他BOM对象：
+                history
+                location
+                Navigator
+                Screen:
+        2. 获取DOM对象
+                document
+        4. 特点
+                * Window对象不需要创建可以直接使用 window使用。 window.方法名();
+                * window引用可以省略。  方法名();-->
+<body>
+<!--<a href="https://www.baidu.com"><input type="submit" name="登陆" value="登陆吧"></input></a>-->
+   <!-- <input type="submit" value="新窗口" id="submit">
+    <input type="submit" value="关闭窗口" id="closeB">-->
+
+<script>
+    /*var submit = document.getElementById("submit");
+    var closeB = document.getElementById("closeB");
+    var window1;
+    submit.onclick=function () {
+        window1 = open("https://www.baidu.com");
+
+
+    }
+    closeB.onclick=function () {
+        window1.close();
+    }*/
+
+    /*var b = confirm("您确定要退出吗？");
+    if(b){
+        alert("欢迎再次光临");
+    }else{
+        alert("手别抖动");
+    }*/
+    /*var s = prompt("请输入你要转的钱");
+    alert(s);*/
+
+    var a1=setTimeout(function () {  //一次性定时器
+        alert("就要炸了");
+    },2000)
+    clearTimeout(a1);  //取消一次性定时器
+    var a2 = setInterval(function () { //循环定时器
+        alert("就要爆炸了");
+    },2000)
+    clearInterval(a2);  //取消循环定时器
+</script>
+
+</body>
+</html>

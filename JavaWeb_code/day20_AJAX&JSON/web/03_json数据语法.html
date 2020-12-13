@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //1.定义基本格式
+        var person = {"name":"张三","age":21,"money":2000};
+      //  alert(person);
+        //获取name的值
+        var name = person.name;
+        var na = person["name"]; //第二种方法
+        //alert(name);
+
+        //2.定义{}--->[]的格式
+        var persons ={"persons":
+                [{"name":"张三","age":21,"money":2000},
+                 {"name":"李四","age":22,"money":2010},
+                 {"name":"王五","age":23,"money":2100}]
+        };
+        //获取王五
+        var name1 = persons.persons[2].name;
+        alert(name1);
+
+      //  alert(persons);
+        //2.定义[]--->{}的格式
+        var ps =[{"name":"张三","age":21,"money":2000},
+                 {"name":"李四","age":22,"money":2010},
+                 {"name":"王五","age":23,"money":2100}];
+       // alert(ps);
+        //获取李四的值
+        var p = ps[1].name;
+        alert(p);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

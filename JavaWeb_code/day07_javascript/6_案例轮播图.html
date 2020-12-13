@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+        #submit{
+            background-color: #8cc2fd;
+            margin-left: 15px;
+            margin-top: 150px;
+            margin-right: 15px;
+            float: left;
+            border-radius: 50px;
+        }
+        #submit1{
+            background-color: #8bb4fc;
+            margin-right: 15px;
+            margin-top: 150px;
+            margin-left: 15px;
+            float: right;
+            border-radius: 50px;
+        }
+        #submit2{
+            background-color: white;
+            border: white;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+<img src="img/banner_1.jpg" width="90%" id="img" align="center">
+<input type="submit" id="submit" value="下一个">
+<input type="submit" id="submit1" value="上一个">
+<a href="https://www.baidu.com" target="_blank" > <input type="button" id="submit2" value=" "> </input></a>
+
+<script>
+    var num = 1;
+    var img = document.getElementById("img");
+    function f() {
+        num++;
+        if(num>3){
+            num=1;
+        }
+
+        img.src="img/banner_"+num+".jpg"
+    }
+    setInterval(f,3000);
+    var submit = document.getElementById("submit");
+    submit.onclick=function () {
+        num++;
+        if(num>3){
+            num=1;
+        }
+
+        img.src="img/banner_"+num+".jpg"
+    }
+    var submit1 = document.getElementById("submit1");
+    submit1.onclick=function () {
+        num--;
+        if(num<1){
+            num=3;
+        }
+        img.src="img/banner_"+num+".jpg"
+    }
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery对象和js对象的区别</title>
+    <script src="JS/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="div1">div1.......</div>
+<div id="div2">div2........</div>
+<input type="button" value="点我" id="b1">
+<script>
+//1.给b1添加单击事件
+    //获取b1按钮
+    $(function () {
+    $("#b1").click(function () {
+        alert("aaa");
+    });
+    });
+
+    $(function () {
+       //第一种方法 $("#div1").css("background-color","red");
+        $("#div1").css("backgroundColor","pink");
+    })
+/**
+ * $(function)(){} 和window.onload
+ * 区别：window.onload只能定义一次，如果定义多次，后面会覆盖前面的
+ */
+</script>
+</body>
+</html>

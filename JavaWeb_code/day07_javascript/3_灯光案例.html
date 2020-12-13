@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="img/off.gif" id="light"> <br>
+
+<script>
+    var light = document.getElementById("light");
+    var flag = false;
+    light.onclick = function () {
+        if (flag) {
+            light.src = "img/off.gif";
+            flag = false;
+        } else if(!flag) {
+            light.src = "img/on.gif";
+            flag = true;
+        }
+    }
+    var date=new Date();
+    document.write(date+"<br>");
+    document.write(date.toLocaleString());
+</script>
+
+
+</body>
+</html>

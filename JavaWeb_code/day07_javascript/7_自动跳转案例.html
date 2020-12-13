@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动跳转</title>
+    <style>
+        p {
+            text-align: center;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+ <!--   4. Location：地址栏对象
+    1. 创建(获取)：
+    1. window.location
+    2. location
+
+    2. 方法：
+    * reload()	重新加载当前文档。刷新
+    3. 属性
+    * href	设置或返回完整的 URL。-->
+
+</head>
+<body>
+<p>
+    <span id="time">5</span>秒之后，自动跳转到首页
+</p>
+
+<script>
+    var n = 5;
+    var time = document.getElementById("time");
+
+    function showtime() {
+        n--;
+        if (n == 0) {
+            location.href = "https://wwww.baidu.com"; //location跳转
+        }
+        time.innerHTML = n;
+    }
+
+    setInterval(showtime,1000);
+
+
+</script>
+</body>
+</html>

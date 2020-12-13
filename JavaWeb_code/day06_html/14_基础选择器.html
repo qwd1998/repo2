@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础选择器</title>
+    <style>
+        #div1 {
+            color: red; /*id选择器，优先级最高  优先级高于元素选择器*/
+        }
+        .cls1{
+            color: gold;
+        }/*类选择器，优先级高于元素选择器*/
+        div {
+            color: black;
+        } /*元素选择器 优先级最低*/
+    </style>
+
+</head>
+<body>
+<div id="div1" class="cls1">德玛西亚</div>
+
+<div class="cls1">诺克萨斯</div>
+<div class="cls1">艾欧尼亚</div>
+
+</body>
+</html>

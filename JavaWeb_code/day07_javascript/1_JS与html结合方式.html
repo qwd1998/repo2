@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--内部JS
+1. number：数字。 整数/小数/NaN(not a number 一个不是数字的数字类型)
+2. string：字符串。 字符串  "abc" "a" 'abc'
+3. boolean: true和false
+4. null：一个对象为空的占位符
+5. undefined：未定义。如果一个变量没有给初始化值，则会被默认赋值为undefined
+* 其他类型转number：
+        * string转number：按照字面值转换。如果字面值不是数字，则转为NaN（不是数字的数字）
+        * boolean转number：true转为1，false转为0
+2. 引用数据类型：对象
+    -->
+
+    <!--<script>
+        alert("HelloWorld")
+    </script>
+    <script src="JS/a.js"></script>-->
+
+
+   <script>
+       /*var a = 1;
+       alert(a)*/
+       var num = 1;
+       var num2=1.2;
+       var num3=NaN;
+       document.write(num+"----"+typeof(num)+"<br>");
+       document.write(num2+"----"+typeof(num2)+"<br>");
+       document.write(num3+"----"+typeof(num3)+"<br>");
+
+        var str1="abc";
+        var str2="123";
+        document.write(str1+"----"+typeof(str1)+"<br>");
+        document.write(str2+"----"+typeof(str2)+"<br>");
+
+        var obj3=null;
+        var obj=undefined;
+        var obj2;
+        document.write(obj3+"----"+typeof(obj3)+"<br>");
+        document.write(obj+"----"+typeof(obj)+"<br>");
+        document.write(obj2+"----"+typeof(obj2)+"<br>");
+
+
+        var b = +'a';
+        alert(typeof(b)+"<br>");
+        alert(b)
+
+        document.write(("abc"==="acb")+"<br>");//===全等于，先判断类型是否相同，不相同输出false
+
+   </script>
+
+
+
+</head>
+<body>
+<!--<input name="用户" type="text">-->
+</body>
+</html>

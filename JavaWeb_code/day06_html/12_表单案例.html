@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单案例</title>
+</head>
+<body>
+<form action="#" method="post">
+    <table width="600"  align="center" border="1" height="400">
+        <tr>
+            <td >
+                <label for="user">用户名</label>
+            </td>
+            <td>
+                <input name="user" type="text" id="user" placeholder="请输入用户名" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">密码</label>
+            </td>
+            <td>
+                <input name="passsword" type="password" id="password" placeholder="请输入密码" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>
+                <input name="email" type="email" id="email" placeholder="请输入Email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="name">姓名</label>
+            </td>
+            <td>
+                <input name="name" type="text" id="name" placeholder="请输入真实姓名">
+            </td>
+        </tr>
+        <tr>
+            <td width="60">
+                <label for="number">手机号码</label>
+            </td>
+            <td>
+                <input name="number" type="number" id="number" placeholder="请输入您的手机号码">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                性别：
+            </td>
+            <td>
+                <input name="sex" type="radio" checked="checked" value="men"> 男
+                <input name="sex" type="radio" value="women"> 女
+            </td>
+        </tr>
+        <tr>
+            <td>
+                出生日期：
+            </td>
+            <td>
+                <input name="brithday" type="date">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="yanz">验证码</label>
+            </td>
+            <td>
+                <input name="yanz" type="text" id="yanz">
+                <input name="image" type="image" src="image/比比东.png" width="20%"  value="比比东">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <input name="sumbit" type="submit" value="登陆">
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //1.定义基本格式
+        var person = {"name": "张三", "age": 21, "money": 2000};
+        //获取person对象中的所有的键和值
+        //for in 循环
+        /* for(var key in person){
+             alert(key+":"+person[key]);
+         }*/
+
+
+        //2.定义{}--->[]的格式
+        var persons = {
+            "persons":
+                [{"name": "张三", "age": 21, "money": 2000},
+                    {"name": "李四", "age": 22, "money": 2010},
+                    {"name": "王五", "age": 23, "money": 2100}]
+        };
+        //获取persons对象的所有的值
+        for (var keys in persons) {
+            for (var i = 0; i < persons[keys].length; i++) {
+                var person1 = persons[keys][i];
+                for (var key in person1) {
+                    document.write(key + ":" + person1[key]);
+                }
+            }
+        }
+
+
+        //2.定义[]--->{}的格式
+        var ps = [{"name": "张三", "age": 21, "money": 2000},
+            {"name": "李四", "age": 22, "money": 2010},
+            {"name": "王五", "age": 23, "money": 2100}];
+        //获取ps的所有值
+          for (var i= 0;i<ps.length;i++){
+              var p = ps[i];
+              for(var key in p){
+                  document.write(key+":"+p[key]+"<br>");
+              }
+          }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
